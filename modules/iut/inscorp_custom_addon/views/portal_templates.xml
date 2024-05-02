@@ -1,0 +1,53 @@
+<odoo>
+    <template id="purchase_order_portal_content" inherit_id="purchase.purchase_order_portal_content">
+
+        <xpath expr="//th[@class='text-start']" position="after">
+            <th>Allergens</th>
+        </xpath>
+        <xpath expr="//td[@id='product_name']" position="after">
+            <td id="product_allergens">
+                <t t-if="line.product_id.product_tmpl_id.get_allergen_ids()"
+                   t-out="line.product_id.product_tmpl_id.get_allergen_ids().get_allergen_names()"/>
+            </td>
+        </xpath>
+    </template>
+
+    <template id="product" inherit_id="website_sale.product">
+        <xpath expr="//div[@id='o_product_terms_and_share']" position="before">
+            <th t-if="product.get_allergen_ids()">Allergens :</th><br/>
+            <div t-foreach="product.get_allergen_ids()" t-as="allergen_id" class="t">
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                <span class="inscorp_allergen">
+                    <span t-esc="allergen_id.get_allergen_names()" groups="base.group_erp_manager"/>
+                    <button type="button" class="fa fa-trash allergen_delete" t-att-productid="product.id"
+                            t-att-allergenid="allergen_id.id" style="all: unset; cursor: pointer;"/>
+                </span>
+                <br/>
+            </div>
+            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+            <span class="inscorp_allergen" groups="base.group_erp_manager">
+                <t t-if="product.get_missing_ids()">
+                    <select name="allergen_id" id="allergen_id">
+                        <t t-foreach="product.get_missing_ids()" t-as="allergen_id">
+                            <option t-att-id="allergen_id.id" t-att-value="allergen_id.id" t-att-selected="allergen_id.id"
+                                    t-esc="allergen_id.get_allergen_names()"/>
+                        </t>
+                    </select>
+                    <button type="button" t-att-productid="product.id"
+                            t-att-allergenid="allergen_id.id" t-attf-class="btn btn-primary allergen_add">
+                        Add Allergens
+                    </button>
+<!--                      <button type="button" class="fa fa-trash allergen_delete" t-att-productid="product.id"-->
+<!--                            t-att-allergenid="allergen_id.id" style="all: unset; cursor: pointer;"/>-->
+                </t>
+            </span>
+            <!--            </form>-->
+
+        </xpath>
+<!--        <xpath expr="//t[@id='product_allergens']" position="after">-->
+<!--            &lt;!&ndash;            <form id="add"  action="/add_allergen" method="POST">&ndash;&gt;-->
+<!--            -->
+<!--        </xpath>-->
+    </template>
+
+</odoo>

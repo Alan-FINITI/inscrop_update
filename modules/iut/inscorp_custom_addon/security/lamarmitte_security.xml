@@ -1,0 +1,23 @@
+
+<odoo>
+
+
+    <data>
+
+        <record id="group_purchase_validator" model="res.groups">
+            <field name="name">Purchase Validator</field>
+        </record>
+
+
+
+        <record id="access_purchase_order_validator" model="ir.model.access">
+            <field name="name">Access Purchase Order Validation</field>
+            <field name="model_id" ref="model_purchase_order"/>
+            <field name="group_id" ref="group_purchase_validator"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,22 @@
+<odoo>
+    <record id="view_employee_form_inherit_comment" model="ir.ui.view">
+        <field name="name">hr.custom.form.inherit</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <notebook position="inside">
+                <page string="Additional Information" name="additional_information">
+                    <group name="group_comment" string="Employee Information">
+                        <field name="x_comment"/>
+                        <field name="employee_enrollment_date"/>
+                        <field name="employee_end_date"/>
+                        <field name="employee_duration_time" widget="float_time"/>
+
+                    </group>
+                    <group name="group_numberofpurchase" string="Number of Purchase">
+                    </group>
+                </page>
+            </notebook>
+        </field>
+    </record>
+</odoo>

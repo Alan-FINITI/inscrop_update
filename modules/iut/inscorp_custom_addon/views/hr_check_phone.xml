@@ -1,0 +1,20 @@
+<odoo>
+    <data>
+        <record id="view_employee_form_inherit" model="ir.ui.view">
+            <field name="name">hr.employee.form.inherit</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='work_phone']" position="attributes">
+                    <attribute name="on_change">onchange_check_telephone(work_phone)</attribute>
+                </xpath>
+                <xpath expr="//field[@name='work_phone']" position="after">
+                    <div class="oe_inline_error" name="invalid_work_phone" invisible="1">
+                        <field name="work_phone" class="oe_inline"/>
+                        <label class="oe_inline" for="work_phone"/>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

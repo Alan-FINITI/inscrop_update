@@ -1,0 +1,17 @@
+<odoo>
+    <record id="stock_picking_tree_inherit" model="ir.ui.view">
+        <field name="name">stock.vpicktree.inherit</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.vpicktree"/>
+        <field name="arch" type="xml">
+            <data>
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="x_today_date"/>
+                </xpath>
+              <!--<xpath expr="//search/filter[@name='My Transfers']" position="before">
+                    <filter name="payment_management" string="Without payment management" domain="[('create_date','&gt;&gt;','x_today_date' - timedelta(days=14))]"/>
+                </xpath>-->
+            </data>
+        </field>
+    </record>
+</odoo>

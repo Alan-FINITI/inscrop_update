@@ -1,0 +1,262 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* inscorp_custom_addon
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-17 13:36+0000\n"
+"PO-Revision-Date: 2024-04-17 13:36+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: inscorp_custom_addon
+#: model_terms:ir.ui.view,arch_db:inscorp_custom_addon.report_contract_template
+msgid "<strong>Date de début:</strong>"
+msgstr ""
+
+#. module: inscorp_custom_addon
+#: model_terms:ir.ui.view,arch_db:inscorp_custom_addon.report_contract_template
+msgid "<strong>Date de fin:</strong>"
+msgstr ""
+
+#. module: inscorp_custom_addon
+#: model_terms:ir.ui.view,arch_db:inscorp_custom_addon.report_contract_template
+msgid "<strong>Département:</strong>"
+msgstr ""
+
+#. module: inscorp_custom_addon
+#: model_terms:ir.ui.view,arch_db:inscorp_custom_addon.report_contract_template
+msgid "<strong>Poste:</strong>"
+msgstr ""
+
+#. module: inscorp_custom_addon
+#: model_terms:ir.ui.view,arch_db:inscorp_custom_addon.report_contract_template
+msgid "<strong>Salaire:</strong>"
+msgstr ""
+
+#. module: inscorp_custom_addon
+#: model_terms:ir.ui.view,arch_db:inscorp_custom_addon.view_employee_form_inherit_comment
+msgid "Additional Information"
+msgstr "Informations additionnelles"
+
+#. module: inscorp_custom_addon
+#: model_terms:ir.ui.view,arch_db:inscorp_custom_addon.product_template_form_view_inherit
+msgid "Allergen"
+msgstr "Allergène"
+
+#. module: inscorp_custom_addon
+#: model:ir.actions.act_window,name:inscorp_custom_addon.action_allergen_category_category_view
+#: model:ir.model.fields,field_description:inscorp_custom_addon.field_allergen_category_category__allergen
+#: model:ir.model.fields,field_description:inscorp_custom_addon.field_product_product__allergen_category_ids
+#: model:ir.model.fields,field_description:inscorp_custom_addon.field_product_template__allergen_category_ids
+#: model:ir.ui.menu,name:inscorp_custom_addon.allergen_category_menu
+#: model_terms:ir.ui.view,arch_db:inscorp_custom_addon.allergen_category_category_view_form
+#: model_terms:ir.ui.view,arch_db:inscorp_custom_addon.allergen_category_category_view_tree
+msgid "Allergen Category"
+msgstr "Catégorie d'allergène"
+
+#. module: inscorp_custom_addon
+#: model:ir.model.fields,field_description:inscorp_custom_addon.field_product_product__allergen_info
+#: model:ir.model.fields,field_description:inscorp_custom_addon.field_product_template__allergen_info
+msgid "Allergen Information"
+msgstr "Information d'allergène"
+
+#. module: inscorp_custom_addon
+#: model:ir.model,name:inscorp_custom_addon.model_hr_attendance
+msgid "Attendance"
+msgstr "Présences"
+
+#. module: inscorp_custom_addon
+#: model:ir.model,name:inscorp_custom_addon.model_mrp_bom
+msgid "Bill of Material"
+msgstr "Nomenclature"
+
+#. module: inscorp_custom_addon
+#: model:ir.model.fields,field_description:inscorp_custom_addon.field_hr_employee__x_comment
+msgid "Comment"
+msgstr "Commentaire"
+
+#. module: inscorp_custom_addon
+#: model:ir.model,name:inscorp_custom_addon.model_res_partner
+msgid "Contact"
+msgstr "Contact"
+
+#. module: inscorp_custom_addon
+#: model:ir.model,name:inscorp_custom_addon.model_hr_contract
+msgid "Contract"
+msgstr "Contrat de l'employé"
+
+#. module: inscorp_custom_addon
+#: model_terms:ir.ui.view,arch_db:inscorp_custom_addon.report_contract_template
+msgid "Contrat:"
+msgstr ""
+
+#. module: inscorp_custom_addon
+#: model:ir.model.fields,field_description:inscorp_custom_addon.field_allergen_category_category__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: inscorp_custom_addon
+#: model:ir.model.fields,field_description:inscorp_custom_addon.field_allergen_category_category__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: inscorp_custom_addon
+#: model:ir.model.fields,field_description:inscorp_custom_addon.field_allergen_category_category__display_name
+msgid "Display Name"
+msgstr "Nom d'affichage"
+
+#. module: inscorp_custom_addon
+#: model:ir.model,name:inscorp_custom_addon.model_hr_employee
+msgid "Employee"
+msgstr "Employé"
+
+#. module: inscorp_custom_addon
+#: model_terms:ir.ui.view,arch_db:inscorp_custom_addon.view_employee_form_inherit_comment
+msgid "Employee Information"
+msgstr "Information d'employé"
+
+#. module: inscorp_custom_addon
+#: model:ir.model.fields,field_description:inscorp_custom_addon.field_allergen_category_category__id
+msgid "ID"
+msgstr "ID"
+
+#. module: inscorp_custom_addon
+#: model_terms:ir.ui.view,arch_db:inscorp_custom_addon.view_hr_contract_form_inherit
+msgid "Print"
+msgstr "Imprimer"
+
+#. module: inscorp_custom_addon
+#: model_terms:ir.ui.view,arch_db:inscorp_custom_addon.product_template_form_view_inherit
+msgid "Inherits Allergen"
+msgstr "Allerègnes hérités"
+
+#. module: inscorp_custom_addon
+#: model_terms:ir.ui.view,arch_db:inscorp_custom_addon.report_contract_template
+msgid "La Marmite"
+msgstr "La Marmite"
+
+#. module: inscorp_custom_addon
+#: model:ir.model.fields,field_description:inscorp_custom_addon.field_allergen_category_category__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: inscorp_custom_addon
+#: model:ir.model.fields,field_description:inscorp_custom_addon.field_allergen_category_category__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: inscorp_custom_addon
+#: model_terms:ir.ui.view,arch_db:inscorp_custom_addon.report_contract_template
+msgid "Employee name"
+msgstr "Nom de l'employé"
+
+#. module: inscorp_custom_addon
+#: model:ir.model.fields,field_description:inscorp_custom_addon.field_mrp_bom__x_calculated_producted_quantity
+msgid "Nombre de productions possibles"
+msgstr ""
+
+#. module: inscorp_custom_addon
+#: model_terms:ir.ui.view,arch_db:inscorp_custom_addon.view_employee_form_inherit_comment
+msgid "Number of Purchase"
+msgstr "Nombre d'achats"
+
+#. module: inscorp_custom_addon
+#: model:ir.model,name:inscorp_custom_addon.model_product_template
+#: model:ir.model.fields,field_description:inscorp_custom_addon.field_allergen_category_category__products_ids
+#: model_terms:ir.ui.view,arch_db:inscorp_custom_addon.allergen_category_category_view_form
+msgid "Product"
+msgstr "Produit"
+
+#. module: inscorp_custom_addon
+#: model:ir.model,name:inscorp_custom_addon.model_purchase_order
+msgid "Purchase Order"
+msgstr "Bon de commande fournisseur"
+
+#. module: inscorp_custom_addon
+#: model:res.groups,name:inscorp_custom_addon.group_purchase_validator
+msgid "Purchase Validator"
+msgstr "Validateur d'achat"
+
+#. module: inscorp_custom_addon
+#: model_terms:ir.ui.view,arch_db:inscorp_custom_addon.view_mrp_bom_form_inherited
+msgid "Quantité productible selon les stocks"
+msgstr ""
+
+#. module: inscorp_custom_addon
+#: model:ir.model.fields,field_description:inscorp_custom_addon.field_purchase_order__show_validator_button
+msgid "Show Validator Button"
+msgstr "Afficher le bouton du validateur"
+
+#. module: inscorp_custom_addon
+#: model:ir.model.fields,field_description:inscorp_custom_addon.field_purchase_order__partner_id
+msgid "Supplier"
+msgstr "Fournisseur"
+
+#. module: inscorp_custom_addon
+#: model:ir.model,name:inscorp_custom_addon.model_allergen_category_category
+msgid "Table allergen category"
+msgstr "Table des catégories d'allergène"
+
+#. module: inscorp_custom_addon
+#: model:ir.model.fields,field_description:inscorp_custom_addon.field_purchase_order__amount_total
+msgid "Total Amount"
+msgstr "Total"
+
+#. module: inscorp_custom_addon
+#. odoo-python
+#: code:addons/inscorp_custom_addon/models/res.py:0
+#, python-format
+msgid "Total order amount exceeds 100,000. Please review before confirming the "
+"order."
+msgstr "Le nombre total de la commande dépasse les 100,000. Veuilez vérifier avant de confirmer la commande"
+
+#. module: inscorp_custom_addon
+#: model:ir.model,name:inscorp_custom_addon.model_stock_picking
+msgid "Transfer"
+msgstr "Transfert"
+
+#. module: inscorp_custom_addon
+#: model:ir.model.fields.selection,name:inscorp_custom_addon.selection__res_partner__vat_type__vat1
+msgid "VAT 1"
+msgstr "TVA 1"
+
+#. module: inscorp_custom_addon
+#: model:ir.model.fields.selection,name:inscorp_custom_addon.selection__res_partner__vat_type__vat2
+msgid "VAT 2"
+msgstr "TVA 2"
+
+#. module: inscorp_custom_addon
+#: model:ir.model.fields.selection,name:inscorp_custom_addon.selection__res_partner__vat_type__vat3
+msgid "VAT 3"
+msgstr "TVA 3"
+
+#. module: inscorp_custom_addon
+#: model:ir.model.fields,field_description:inscorp_custom_addon.field_res_partner__vat_type
+#: model:ir.model.fields,field_description:inscorp_custom_addon.field_res_users__vat_type
+msgid "VAT Type"
+msgstr "Type de TVA"
+
+#. module: inscorp_custom_addon
+#: model_terms:ir.ui.view,arch_db:inscorp_custom_addon.view_purchase_order_validator
+msgid "Validation by HR Director"
+msgstr "Validation par le directeur RH"
+
+#. module: inscorp_custom_addon
+#: model:ir.model.fields,help:inscorp_custom_addon.field_purchase_order__partner_id
+msgid "You can find a vendor by its Name, TIN, Email or Internal Reference."
+msgstr "Vous pouvez trouver un fournisseur par son nom, numéro de TVA, email ou sa référence interne."
+
+#. module: inscorp_custom_addon
+#: model:ir.model.fields,field_description:inscorp_custom_addon.field_stock_picking__x_today_date
+msgid "today date"
+msgstr ""
+"Date du jour"
+
+

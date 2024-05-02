@@ -1,0 +1,27 @@
+<odoo>
+    <record id="view_purchase_order_validator" model="ir.ui.view">
+        <field name="name">purchase.order.validator</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="priority">20</field>
+        <field name="arch" type="xml">
+            <data>
+                <xpath expr="//field[@name='partner_id']" position="after">
+                    <field name="show_validator_button" invisible="1"/>
+                </xpath>
+                <xpath expr="//button[@name='button_cancel']" position="before">
+                    <button name="button_validator" string="Validation by HR Director"
+                            type="object"
+                            groups="inscorp_custom_addon.group_purchase_validator"
+
+                            invisible="not show_validator_button" />
+                    <!--                            attrs="{'invisible': [('show_validator_button', '=', False)], 'groups': 'purchase.group_validator'}"-->
+                </xpath>
+                <xpath expr="//button[@id='draft_confirm']" position="attributes">
+                    <attribute name="invisible">show_validator_button</attribute>
+                </xpath>
+            </data>
+        </field>
+    </record>
+
+</odoo>

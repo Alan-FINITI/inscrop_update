@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+allergen_category_user,allergen_category.category,model_allergen_category_category,base.group_user,1,1,1,1

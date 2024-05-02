@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data>
+        <!-- Ajout de la page Allergen -->
+        <record id="product_template_form_view_inherit" model="ir.ui.view">
+            <field name="name">product.template.form.inherit</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_form_view"/>
+            <field name="arch" type="xml">
+                <notebook position="inside">
+                    <page string="Allergen" name="allergen">
+                        <group name="group_allergen" string="Allergen">
+                            <field name="allergen_category_ids"/>
+
+                        </group>
+                        <group name="group_inherit_allergen" string="Inherits Allergen">
+                            <field name="allergen_info"/>
+                        </group>
+
+                    </page>
+                </notebook>
+            </field>
+        </record>
+    </data>
+</odoo>

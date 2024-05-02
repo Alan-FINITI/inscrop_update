@@ -1,0 +1,40 @@
+<odoo>
+    <record model="ir.ui.view" id="allergen_category_category_view_form">
+        <field name="name">category.form</field>
+        <field name="model">allergen_category.category</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Allergen Category">
+                <sheet>
+                    <group>
+                        <field name="allergen"/>
+                    </group>
+                    <notebook>
+                        <page string="Product" >
+                            <field name="products_ids"/>
+                        </page>
+                    </notebook>
+
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="allergen_category_category_view_tree">
+        <field name="name">category.tree</field>
+        <field name="model">allergen_category.category</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Allergen Category">
+                <field name="allergen"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record model="ir.actions.act_window" id="action_allergen_category_category_view">
+        <field name="name">Allergen Category</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">allergen_category.category</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

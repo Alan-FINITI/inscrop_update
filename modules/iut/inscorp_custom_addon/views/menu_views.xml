@@ -1,0 +1,6 @@
+<odoo>
+
+    <menuitem id="allergen_category_menu" name="Allergen Category" parent="mrp.menu_mrp_configuration" action="action_allergen_category_category_view"/>
+
+
+</odoo>

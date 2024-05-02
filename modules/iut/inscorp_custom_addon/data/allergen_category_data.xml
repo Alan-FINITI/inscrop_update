@@ -1,0 +1,28 @@
+<odoo noupdate="1">
+    <record id="1" model="allergen_category.category">
+        <field name="allergen">Lactose</field>
+    </record>
+
+    <record id="2" model="allergen_category.category">
+        <field name="allergen">Gluten</field>
+    </record>
+
+    <record id="3" model="allergen_category.category">
+        <field name="allergen">Oeufs</field>
+    </record>
+
+    <record id="4" model="allergen_category.category">
+        <field name="allergen">Soja</field>
+    </record>
+
+    <record id="5" model="allergen_category.category">
+        <field name="allergen">Poisson</field>
+    </record>
+
+
+    <record id="6" model="allergen_category.category">
+        <field name="allergen">Crustacés et Mollusques</field>
+    </record>
+
+
+</odoo>

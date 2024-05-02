@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <!-- Report definition -->
+        <report
+            id="report_contract"
+            string="Employee Contract"
+            model="hr.contract"
+            report_type="qweb-pdf"
+            name="inscorp_custom_addon.report_contract_template"
+            file="inscorp_custom_addon.report_contract_template"
+        />
+    </data>
+</odoo>

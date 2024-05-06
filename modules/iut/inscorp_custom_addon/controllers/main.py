@@ -20,12 +20,11 @@ class ProductController(http.Controller):
         if request.env.user.has_group('stock.group_stock_manager'):
             product = request.env['product.template'].browse(int(product_id))
             allergen = request.env['allergen_category.category'].browse(int(allergen_id))
+            allergen_name = allergen.get_allergen_names()
             allergen.products_ids = allergen.products_ids.filtered(lambda p: p.id != int(product_id))
             _logger.info("product id : %s allergen id : %s", product_id, allergen_id)
-            if product.get_missing_ids():
-                return True
-            else:
-                return False
+            return allergen_name
+
 
         #     return request.redirect('/shop/{}'.format(product_id) if product_id else '/shop')
         # else:

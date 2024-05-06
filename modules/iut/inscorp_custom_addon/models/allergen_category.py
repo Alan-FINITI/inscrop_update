@@ -25,6 +25,4 @@ class Category(models.Model):
                 if len(self) > 1:
                     if allergen_id != self[-1]:
                         string += ", "
-            # else:
-            #     string += "no more allergens"
         return string
